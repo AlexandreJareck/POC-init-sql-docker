@@ -22,7 +22,7 @@ ENV SA_PASSWORD=YourStrong!Passw0rd
 ENV MSSQL_PID=Express
 
 # Copia o script SQL que você deseja executar após a criação do contêiner para o filesystem do contêiner
-COPY setup.sql /docker-entrypoint-initdb.d/
+COPY init.sql /docker-entrypoint-initdb.d/
 
 # Copia o script shell para executar o script SQL
 
