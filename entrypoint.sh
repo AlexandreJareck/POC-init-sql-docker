@@ -19,7 +19,7 @@ echo "SQL Server iniciado."
 
 # Executa o script SQL
 echo "Executando o script 'init.sql'..."
-/opt/mssql-tools/bin/sqlcmmd -S localhost -U sa -P "$SA_PASSWORD" -d master -i /docker-entrypoint-initdb.d/init.sql
+/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P "$SA_PASSWORD" -d master -i /docker-entrypoint-initdb.d/init.sql
 
 echo "Script 'init.sql' executado com sucesso!!!"
 
